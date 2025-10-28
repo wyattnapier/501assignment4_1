@@ -9,7 +9,7 @@ import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
 
-class TrackerModelView {
+class TrackerModelView: ViewModel() {
     // private mutable flow holding our logs
     private val _logEntries = MutableStateFlow<List<LogEntry>>(emptyList())
     // public immutable flow that the UI can observe
